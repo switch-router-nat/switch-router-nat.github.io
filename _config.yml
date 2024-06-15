@@ -1,0 +1,35 @@
+title: Switch-Router
+description: Switch-Router
+
+url: /
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Articles
+   url: /articles
+ - title: Categories
+   url: /categories
+ - title: About Me
+   url: /about
+social:
+   email: yacanliu@163.com
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      comments: false
+
+# development configurations
+host: 0.0.0.0
